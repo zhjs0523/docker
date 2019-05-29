@@ -1,0 +1,65 @@
+redis1:
+  build: ./
+  restart: always
+  volumes:
+     - /Users/zhjs/Documents/study/docker/redis-cluster/6001/data:/data
+  environment:
+     - REDIS_PORT=6001
+  ports:
+     - '6001:6001'       #服务端口
+     - '16001:16001'   #集群端口
+
+redis2:
+  build: ./
+  restart: always
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis-cluster/6002/data:/data
+  environment:
+    - REDIS_PORT=6002
+  ports:
+    - '6002:6002'
+    - '16002:16002'
+
+redis3:
+  build: ./
+  restart: always
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis-cluster/6003/data:/data
+  environment:
+    - REDIS_PORT=6003
+  ports:
+    - '6003:6003'
+    - '16003:16003'
+
+redis4:
+  build: ./
+  restart: always
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis-cluster/6004/data:/data
+  environment:
+    - REDIS_PORT=6004
+  ports:
+    - '6004:6004'
+    - '16004:16004'
+
+redis5:
+  build: ./
+  restart: always
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis-cluster/6005/data:/data
+  environment:
+    - REDIS_PORT=6005
+  ports:
+    - '6005:6005'
+    - '16005:16005'
+
+redis6:
+  build: ./
+  restart: always
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis-cluster/6006/data:/data
+  environment:
+    - REDIS_PORT=6006
+  ports:
+    - '6006:6006'
+    - '16006:16006'

@@ -1,0 +1,72 @@
+redis1:
+  image: zhjs/redis-server
+  environment:
+    - REDIS_PORT=7000
+  ports:
+    - '7000:6379'
+    - '17000:16379'
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis/redis-7000:/root/redis/
+  entrypoint: ["/usr/bin/redis-server", "--logfile", "/root/redis/redis.log",
+     "--cluster-enabled", "yes", "--save", "900 1", "--save", "300 10", "--save", "60 10000",
+     "--port", "6379", "--bind", "0.0.0.0", "--dir", "/root/redis/", "--dbfilename", "dump.rdb", "--timeout", "0", "--maxmemory", "1024mb"]
+redis2:
+  image: zhjs/redis-server
+  environment:
+    - REDIS_PORT=7001
+  ports:
+    - '7001:6379'
+    - '17001:16379'
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis/redis-7001:/root/redis/
+  entrypoint: ["/usr/bin/redis-server", "--logfile", "/root/redis/redis.log",
+    "--cluster-enabled", "yes", "--save", "900 1", "--save", "300 10", "--save", "60 10000",
+    "--port", "6379", "--bind", "0.0.0.0", "--dir", "/root/redis/", "--dbfilename", "dump.rdb", "--timeout", "0", "--maxmemory", "1024mb"]
+redis3:
+  image: zhjs/redis-server
+  environment:
+    - REDIS_PORT=7002
+  ports:
+    - '7002:6379'
+    - '17002:16379'
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis/redis-7002:/root/redis/
+  entrypoint: ["/usr/bin/redis-server", "--logfile", "/root/redis/redis.log",
+    "--cluster-enabled", "yes", "--save", "900 1", "--save", "300 10", "--save", "60 10000",
+    "--port", "6379", "--bind", "0.0.0.0", "--dir", "/root/redis/", "--dbfilename", "dump.rdb", "--timeout", "0", "--maxmemory", "1024mb"]
+redis4:
+  image: zhjs/redis-server
+  environment:
+    - REDIS_PORT=7003
+  ports:
+    - '7003:6379'
+    - '17003:16379'
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis/redis-7003:/root/redis/
+  entrypoint: ["/usr/bin/redis-server", "--logfile", "/root/redis/redis.log",
+    "--cluster-enabled", "yes", "--save", "900 1", "--save", "300 10", "--save", "60 10000",
+    "--port", "6379", "--bind", "0.0.0.0", "--dir", "/root/redis/", "--dbfilename", "dump.rdb", "--timeout", "0", "--maxmemory", "1024mb"]
+redis5:
+  image: zhjs/redis-server
+  environment:
+    - REDIS_PORT=7004
+  ports:
+    - '7004:6379'
+    - '17004:16379'
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis/redis-7004:/root/redis/
+  entrypoint: ["/usr/bin/redis-server", "--logfile", "/root/redis/redis.log",
+    "--cluster-enabled", "yes", "--save", "900 1", "--save", "300 10", "--save", "60 10000",
+    "--port", "6379", "--bind", "0.0.0.0", "--dir", "/root/redis/", "--dbfilename", "dump.rdb", "--timeout", "0", "--maxmemory", "1024mb"]
+redis6:
+  image: zhjs/redis-server
+  environment:
+    - REDIS_PORT=7005
+  ports:
+    - '7005:6379'
+    - '17005:16379'
+  volumes:
+    - /Users/zhjs/Documents/study/docker/redis/redis-7005:/root/redis/
+  entrypoint: ["/usr/bin/redis-server", "--logfile", "/root/redis/redis.log",
+    "--cluster-enabled", "yes", "--save", "900 1", "--save", "300 10", "--save", "60 10000",
+    "--port", "6379", "--bind", "0.0.0.0", "--dir", "/root/redis/", "--dbfilename", "dump.rdb", "--timeout", "0", "--maxmemory", "1024mb"]

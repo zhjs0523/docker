@@ -1,0 +1,4 @@
+FROM ruby
+
+ADD redis-trib.rb /redis-trib.rb
+

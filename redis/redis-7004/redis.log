@@ -1,0 +1,10 @@
+1:C 27 May 09:24:10.605 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+1:C 27 May 09:24:10.607 # Redis version=4.0.9, bits=64, commit=00000000, modified=0, pid=1, just started
+1:C 27 May 09:24:10.608 # Configuration loaded
+1:M 27 May 09:24:10.612 * No cluster configuration found, I'm 0adcb84a6208a5cd90809793201a8d006bb0dc1e
+1:M 27 May 09:24:10.614 * Running mode=cluster, port=6379.
+1:M 27 May 09:24:10.616 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+1:M 27 May 09:24:10.618 # Server initialized
+1:M 27 May 09:24:10.619 # WARNING you have Transparent Huge Pages (THP) support enabled in your kernel. This will create latency and memory usage issues with Redis. To fix this issue run the command 'echo never > /sys/kernel/mm/transparent_hugepage/enabled' as root, and add it to your /etc/rc.local in order to retain the setting after a reboot. Redis must be restarted after THP is disabled.
+1:M 27 May 09:24:10.622 * Ready to accept connections
+1:M 27 May 09:24:17.302 # configEpoch set to 4 via CLUSTER SET-CONFIG-EPOCH
